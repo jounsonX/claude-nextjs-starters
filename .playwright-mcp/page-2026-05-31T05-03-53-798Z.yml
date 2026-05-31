@@ -1,0 +1,170 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "S StarterKit" [ref=e4] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e5]: S
+        - generic [ref=e6]: StarterKit
+      - navigation [ref=e7]:
+        - link "홈" [ref=e8] [cursor=pointer]:
+          - /url: /
+        - link "기능" [ref=e9] [cursor=pointer]:
+          - /url: /#features
+        - link "대시보드" [ref=e10] [cursor=pointer]:
+          - /url: /dashboard
+        - link "로그인" [ref=e11] [cursor=pointer]:
+          - /url: /login
+        - button "예제" [ref=e12]:
+          - text: 예제
+          - img [ref=e13]
+  - main [ref=e17]:
+    - generic [ref=e18]:
+      - navigation "breadcrumb" [ref=e19]:
+        - list [ref=e20]:
+          - listitem [ref=e21]:
+            - link "홈" [ref=e22] [cursor=pointer]:
+              - /url: /
+          - listitem [ref=e23]:
+            - img [ref=e24]
+          - listitem [ref=e26]:
+            - link "예제" [ref=e27] [cursor=pointer]:
+              - /url: /examples
+          - listitem [ref=e28]:
+            - img [ref=e29]
+          - listitem [ref=e31]:
+            - link "레이아웃 예제" [disabled] [ref=e32]
+      - generic [ref=e33]:
+        - heading "레이아웃 예제" [level=1] [ref=e34]
+        - paragraph [ref=e35]: 실무에서 자주 사용하는 레이아웃 패턴을 확인하세요.
+      - generic [ref=e36]:
+        - generic [ref=e37]:
+          - generic [ref=e38]:
+            - heading "2단 그리드" [level=2] [ref=e39]
+            - paragraph [ref=e40]: 콘텐츠와 사이드바를 나누는 2단 구조
+          - generic [ref=e41]:
+            - generic [ref=e43]:
+              - generic [ref=e44]:
+                - generic [ref=e45]: 메인 콘텐츠
+                - generic [ref=e46]: lg:col-span-2로 넓은 영역을 차지합니다.
+              - generic [ref=e47]:
+                - paragraph [ref=e48]: 2단 레이아웃에서 메인 콘텐츠 영역입니다. 블로그 포스트, 제품 상세, 아티클 등 주요 콘텐츠를 표시합니다. 반응형으로 모바일에서는 단일 컬럼으로 변환됩니다.
+                - generic [ref=e49]:
+                  - button "읽기 계속" [ref=e50]
+                  - button "공유" [ref=e51]
+            - generic [ref=e53]:
+              - generic [ref=e55]: 사이드바
+              - generic [ref=e56]:
+                - generic [ref=e57]:
+                  - paragraph [ref=e58]: 관련 태그
+                  - generic [ref=e59]:
+                    - generic [ref=e60]: Next.js
+                    - generic [ref=e61]: React
+                    - generic [ref=e62]: TypeScript
+                - generic [ref=e63]:
+                  - paragraph [ref=e64]: 관련 링크
+                  - paragraph [ref=e65] [cursor=pointer]: 문서 →
+                  - paragraph [ref=e66] [cursor=pointer]: API 레퍼런스 →
+                  - paragraph [ref=e67] [cursor=pointer]: 예제 →
+        - generic [ref=e68]:
+          - generic [ref=e69]:
+            - heading "3단 카드 그리드" [level=2] [ref=e70]
+            - paragraph [ref=e71]: 반응형 카드 그리드 (1→2→3 컬럼)
+          - generic [ref=e72]:
+            - generic [ref=e74]:
+              - img [ref=e76]
+              - generic [ref=e78]: 빠른 성능
+              - generic [ref=e79]: 최적화된 번들로 빠른 로딩 속도를 제공합니다.
+            - generic [ref=e81]:
+              - img [ref=e83]
+              - generic [ref=e85]: 타입 안전
+              - generic [ref=e86]: TypeScript로 런타임 오류를 사전에 방지합니다.
+            - generic [ref=e88]:
+              - img [ref=e90]
+              - generic [ref=e96]: 다크모드
+              - generic [ref=e97]: next-themes로 시스템 테마를 자동 감지합니다.
+            - generic [ref=e99]:
+              - img [ref=e101]
+              - generic [ref=e103]: App Router
+              - generic [ref=e104]: Next.js 16의 최신 라우팅 시스템을 사용합니다.
+            - generic [ref=e106]:
+              - img [ref=e108]
+              - generic [ref=e112]: shadcn/ui
+              - generic [ref=e113]: Radix UI 기반의 접근성 높은 컴포넌트입니다.
+            - generic [ref=e115]:
+              - img [ref=e117]
+              - generic [ref=e120]: 반응형
+              - generic [ref=e121]: 모바일부터 데스크톱까지 완벽하게 대응합니다.
+        - generic [ref=e122]:
+          - generic [ref=e123]:
+            - heading "사이드바 레이아웃" [level=2] [ref=e124]
+            - paragraph [ref=e125]: 좌측 고정 사이드바 + 스크롤 가능한 메인 콘텐츠
+          - generic [ref=e127]:
+            - complementary [ref=e128]:
+              - paragraph [ref=e129]: 내비게이션
+              - navigation [ref=e130]:
+                - generic [ref=e131] [cursor=pointer]: 대시보드
+                - generic [ref=e132] [cursor=pointer]: 분석
+                - generic [ref=e133] [cursor=pointer]: 사용자
+                - generic [ref=e134] [cursor=pointer]: 설정
+                - generic [ref=e135] [cursor=pointer]: 도움말
+            - main [ref=e136]:
+              - heading "대시보드" [level=3] [ref=e137]
+              - paragraph [ref=e138]: 사이드바가 고정되고 오른쪽 메인 영역이 확장됩니다.
+              - generic [ref=e139]:
+                - generic [ref=e140]:
+                  - paragraph [ref=e141]: 방문자
+                  - paragraph [ref=e142]: —
+                - generic [ref=e143]:
+                  - paragraph [ref=e144]: 전환율
+                  - paragraph [ref=e145]: —
+                - generic [ref=e146]:
+                  - paragraph [ref=e147]: 수익
+                  - paragraph [ref=e148]: —
+        - generic [ref=e149]:
+          - generic [ref=e150]:
+            - heading "탭 기반 뷰 전환" [level=2] [ref=e151]
+            - paragraph [ref=e152]: Tabs 컴포넌트로 콘텐츠 뷰를 전환하는 패턴
+          - generic [ref=e153]:
+            - tablist [ref=e154]:
+              - tab "그리드 뷰" [selected] [ref=e155]
+              - tab "리스트 뷰" [ref=e156]
+              - tab "팀 뷰" [ref=e157]
+            - tabpanel "그리드 뷰" [ref=e158]:
+              - generic [ref=e159]:
+                - generic [ref=e161]:
+                  - img [ref=e163]
+                  - generic [ref=e165]: 빠른 성능
+                - generic [ref=e167]:
+                  - img [ref=e169]
+                  - generic [ref=e171]: 타입 안전
+                - generic [ref=e173]:
+                  - img [ref=e175]
+                  - generic [ref=e181]: 다크모드
+                - generic [ref=e183]:
+                  - img [ref=e185]
+                  - generic [ref=e187]: App Router
+        - generic [ref=e188]:
+          - generic [ref=e189]:
+            - heading "스플릿 레이아웃" [level=2] [ref=e190]
+            - paragraph [ref=e191]: 좌우를 동등하게 나누는 2단 분할 구조
+          - generic [ref=e192]:
+            - generic [ref=e193]:
+              - heading "왼쪽 패널" [level=3] [ref=e194]
+              - paragraph [ref=e195]: 이미지, 일러스트, 브랜드 메시지 등을 배치합니다. 로그인·회원가입·온보딩 화면에 자주 쓰이는 패턴입니다.
+            - generic [ref=e200]:
+              - heading "오른쪽 패널" [level=3] [ref=e201]
+              - paragraph [ref=e202]: 폼, 콘텐츠, 액션 등이 들어갑니다.
+              - generic [ref=e203]:
+                - generic [ref=e205]: 입력 필드 예시
+                - button "액션 버튼" [ref=e206]
+  - contentinfo [ref=e207]:
+    - generic [ref=e208]:
+      - paragraph [ref=e209]: © 2025 StarterKit. Built with Next.js & Tailwind CSS
+      - generic [ref=e210]:
+        - generic [ref=e211]: Next.js · TypeScript · shadcn/ui
+        - link "GitHub" [ref=e212] [cursor=pointer]:
+          - /url: https://github.com
+          - img [ref=e213]
+  - region "Notifications alt+T"
+  - button "Open Next.js Dev Tools" [ref=e222] [cursor=pointer]:
+    - img [ref=e223]

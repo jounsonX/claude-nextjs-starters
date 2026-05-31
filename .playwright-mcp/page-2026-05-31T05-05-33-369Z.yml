@@ -1,0 +1,117 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "S StarterKit" [ref=e4] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e5]: S
+        - generic [ref=e6]: StarterKit
+      - navigation [ref=e7]:
+        - link "홈" [ref=e8] [cursor=pointer]:
+          - /url: /
+        - link "기능" [ref=e9] [cursor=pointer]:
+          - /url: /#features
+        - link "대시보드" [ref=e10] [cursor=pointer]:
+          - /url: /dashboard
+        - link "로그인" [ref=e11] [cursor=pointer]:
+          - /url: /login
+        - button "예제" [ref=e12]:
+          - text: 예제
+          - img [ref=e13]
+  - main [ref=e17]:
+    - generic [ref=e18]:
+      - navigation "breadcrumb" [ref=e19]:
+        - list [ref=e20]:
+          - listitem [ref=e21]:
+            - link "홈" [ref=e22] [cursor=pointer]:
+              - /url: /
+          - listitem [ref=e23]:
+            - img [ref=e24]
+          - listitem [ref=e26]:
+            - link "예제" [ref=e27] [cursor=pointer]:
+              - /url: /examples
+          - listitem [ref=e28]:
+            - img [ref=e29]
+          - listitem [ref=e31]:
+            - link "폼 예제" [disabled] [ref=e32]
+      - generic [ref=e33]:
+        - heading "폼 예제" [level=1] [ref=e34]
+        - paragraph [ref=e35]: react-hook-form + zod를 활용한 유효성 검증 패턴을 확인하세요.
+        - generic [ref=e36]:
+          - generic [ref=e37]: react-hook-form
+          - generic [ref=e38]: zod
+          - generic [ref=e39]: Input
+          - generic [ref=e40]: Select
+          - generic [ref=e41]: Checkbox
+          - generic [ref=e42]: Switch
+          - generic [ref=e43]: sonner
+      - generic [ref=e44]:
+        - generic [ref=e45]:
+          - generic [ref=e46]: 문의 폼
+          - generic [ref=e47]: 아래 필드를 작성 후 제출하면 유효성 검증이 실행됩니다. 필수 항목(*)을 비워두고 제출하면 오류 메시지를 확인할 수 있습니다.
+        - generic [ref=e49]:
+          - generic [ref=e50]:
+            - generic [ref=e51]:
+              - generic [ref=e52]:
+                - text: 이름
+                - generic [ref=e53]: "*"
+              - textbox "이름 *" [ref=e54]:
+                - /placeholder: 홍길동
+            - generic [ref=e55]:
+              - generic [ref=e56]:
+                - text: 이메일
+                - generic [ref=e57]: "*"
+              - textbox "이메일 *" [ref=e58]:
+                - /placeholder: example@email.com
+          - generic [ref=e59]:
+            - generic [ref=e60]:
+              - generic [ref=e61]: 전화번호 (선택)
+              - textbox "전화번호 (선택)" [ref=e62]:
+                - /placeholder: 010-0000-0000
+            - generic [ref=e63]:
+              - generic [ref=e64]:
+                - text: 문의 유형
+                - generic [ref=e65]: "*"
+              - combobox "문의 유형 *" [ref=e66]:
+                - generic: 유형을 선택하세요
+                - img
+              - combobox [ref=e67]
+          - generic [ref=e68]:
+            - generic [ref=e69]:
+              - text: 메시지
+              - generic [ref=e70]: "*"
+            - textbox "메시지 *" [ref=e71]:
+              - /placeholder: 문의 내용을 자세히 입력해주세요...
+          - generic [ref=e72]:
+            - switch "뉴스레터 구독" [ref=e73]
+            - checkbox
+            - generic [ref=e74]:
+              - generic [ref=e75] [cursor=pointer]: 뉴스레터 구독
+              - paragraph [ref=e76]: 최신 업데이트와 소식을 이메일로 받아보세요.
+          - generic [ref=e78]:
+            - checkbox "이용약관 에 동의합니다. *" [ref=e79]
+            - checkbox
+            - generic [ref=e80] [cursor=pointer]:
+              - generic [ref=e81]: 이용약관
+              - text: 에 동의합니다.
+              - generic [ref=e82]: "*"
+          - button "문의 보내기" [ref=e83]
+      - generic [ref=e84]:
+        - heading "이 예제에서 확인할 수 있는 패턴" [level=2] [ref=e85]
+        - list [ref=e86]:
+          - listitem [ref=e87]: zodResolver — zod 스키마를 react-hook-form에 연결
+          - listitem [ref=e88]: register — 텍스트 인풋 등록 패턴
+          - listitem [ref=e89]: setValue + shouldValidate — Select, Checkbox, Switch 등 비표준 입력 처리
+          - listitem [ref=e90]: isSubmitting — 제출 중 로딩 스피너 표시
+          - listitem [ref=e91]: toast() — sonner로 성공 알림 전송
+          - listitem [ref=e92]: aria-invalid — 에러 필드 접근성 처리
+  - contentinfo [ref=e93]:
+    - generic [ref=e94]:
+      - paragraph [ref=e95]: © 2025 StarterKit. Built with Next.js & Tailwind CSS
+      - generic [ref=e96]:
+        - generic [ref=e97]: Next.js · TypeScript · shadcn/ui
+        - link "GitHub" [ref=e98] [cursor=pointer]:
+          - /url: https://github.com
+          - img [ref=e99]
+  - region "Notifications alt+T"
+  - button "Open Next.js Dev Tools" [ref=e108] [cursor=pointer]:
+    - img [ref=e109]
