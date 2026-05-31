@@ -1,6 +1,5 @@
 "use client"
 
-import { useState } from "react"
 import { useForm } from "react-hook-form"
 import { zodResolver } from "@hookform/resolvers/zod"
 import { z } from "zod"
@@ -33,8 +32,6 @@ const contactSchema = z.object({
 type ContactFormValues = z.infer<typeof contactSchema>
 
 export function ContactForm() {
-  const [newsletter, setNewsletter] = useState(false)
-
   const {
     register,
     handleSubmit,
@@ -56,15 +53,16 @@ export function ContactForm() {
   })
 
   const termsChecked = watch("terms")
+  const newsletterValue = watch("newsletter") ?? false
 
   async function onSubmit(data: ContactFormValues) {
     await new Promise((r) => setTimeout(r, 1000))
-    console.log("제출 데이터:", data)
+    // TODO: 실제 API 연동 시 교체 예시
+    // await fetch('/api/contact', { method: 'POST', body: JSON.stringify(data) })
     toast.success("문의가 접수되었습니다!", {
       description: `${data.name}님의 문의를 확인 후 연락드리겠습니다.`,
     })
     reset()
-    setNewsletter(false)
   }
 
   return (
@@ -155,11 +153,8 @@ export function ContactForm() {
       <div className="flex items-center gap-3 rounded-lg border border-border p-4">
         <Switch
           id="newsletter"
-          checked={newsletter}
-          onCheckedChange={(v) => {
-            setNewsletter(v)
-            setValue("newsletter", v)
-          }}
+          checked={newsletterValue}
+          onCheckedChange={(v) => setValue("newsletter", v)}
         />
         <div>
           <Label htmlFor="newsletter" className="cursor-pointer">
